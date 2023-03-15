@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>
+        Plots
+    </title>
+    <style>
+    img{
+        max-width: 100%;
+        max-height: 100%;
+        display: block; /* remove extra space below image */
+    }
+
+</style>
+</head>
+<body>
+    {% for plot in plots %}
+    <img src="{{ url_for('get_img', filename=plot) }}" alt="{{ plot }}">
+    {% endfor %}
+</body>
+</html>

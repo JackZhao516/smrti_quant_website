@@ -1,0 +1,22 @@
+<!doctype html>
+<head>
+    <title>90 day price graph(close)</title>
+</head>
+<html>
+   <body>
+     <main>
+         <h1>Please input a list of coins symbols seperated by space</h1>
+        <form method="post" action={{ url_for("query_list") }}>
+            <div>
+                <label for="name"> e.g. "btc eth ltc aave"</label><br>
+                <div>
+                    <input type="text" id="name" name="name" size="100" style="max-width: 1000px;">
+                </div><br>
+                <div>
+                  <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Submit</button>
+                </div>
+            </div>
+        </form>
+     </main>
+   </body>
+</html>
