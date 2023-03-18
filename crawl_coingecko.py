@@ -7,7 +7,8 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from pycoingecko import CoinGeckoAPI
 
-cg = CoinGeckoAPI()
+COINGECKO_API_KEY = json.load(open("token.json"))["COINGECKO_API_KEY"]
+cg = CoinGeckoAPI(api_key=COINGECKO_API_KEY)
 matplotlib.use('agg')
 
 
